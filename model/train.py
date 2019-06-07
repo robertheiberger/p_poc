@@ -46,7 +46,7 @@ from sklearn.preprocessing import LabelEncoder
 
 import emoji
 
-from gamesbiz.resolve import paths
+from model.resolve import paths
 
 prefix = '/opt/ml/'
 
