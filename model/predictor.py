@@ -9,7 +9,7 @@ import pandas as pd
 from tensorflow.contrib import predictor
 from sklearn.externals import joblib
 
-from gamesbiz.resolve import paths
+from model.resolve import paths
 
 
 class ScoringService(object):
