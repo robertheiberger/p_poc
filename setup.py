@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='p-poc',
+    name='model',
     version='0.0.1rc0',
 
     # Package data
@@ -17,15 +17,22 @@ setup(
         'tensorflow',
         'flask',
         'gunicorn',
-        'gevent'
+        'gevent',
+        'tensorflow',
+        'keras',
+        'gensim',
+        'tqdm',
+        'nltk',
+        'emoji',
+        'sagemaker' 
     ],
 
     entry_points={
-        "gamesbiz.training": [
-           "train=gamesbiz.train:entry_point"
+        "model.training": [
+           "train=model.train:entry_point"
         ],
-        "gamesbiz.hosting": [
-           "serve=gamesbiz.server:start_server"
+        "model.hosting": [
+           "serve=model.server:start_server"
         ]
     }
 )
